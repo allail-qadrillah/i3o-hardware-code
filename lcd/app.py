@@ -4,13 +4,13 @@ from .drivers.i2c_dev import Lcd
 class LCD:
 
   def __init__(self) -> None:
-    self.lcd = Lcd()
+    pass
 
   def display(self, text:str, line:int):
-    return self.lcd.lcd_display_string(text, line)
+    return Lcd.lcd_display_string(text, line)
   
   def progress_bar(self):
     return progress_bar()
   
   def clear(self):              
-    return self.lcd.lcd_clear()
+    return Lcd.lcd_clear()
